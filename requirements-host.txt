@@ -1,0 +1,5 @@
+numpy
+Pillow
+matplotlib
+opencv-python
+paramiko

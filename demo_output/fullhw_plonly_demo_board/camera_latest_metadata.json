@@ -1,0 +1,52 @@
+{
+  "bitfile": "hardware/overlay/yolo_pynq_z2_fullhw_plonly_demo_cam32.bit",
+  "frame_index": 2,
+  "inference_ms": 32.875667000098474,
+  "loop_fps": 3.350035830306045,
+  "capture_size": [
+    640,
+    480
+  ],
+  "process_size": [
+    32,
+    32
+  ],
+  "detector_spec": {
+    "img_width": 32,
+    "img_height": 32,
+    "in_channels": 3,
+    "record_bytes": 8,
+    "output_bytes": 6288
+  },
+  "dma_counters": {
+    "status_reg": 3519021056,
+    "in_count_reg": 3072,
+    "out_count_reg": 6288
+  },
+  "raw_detection_count": 6,
+  "preview_detection_count": 2,
+  "detections": [
+    {
+      "bbox_xyxy": [
+        213.15406799316406,
+        43.294105529785156,
+        531.899169921875,
+        282.3529357910156
+      ],
+      "score": 1.0,
+      "class_id": 1,
+      "class_name": "class_1"
+    },
+    {
+      "bbox_xyxy": [
+        58.26331329345703,
+        39.663856506347656,
+        269.08685302734375,
+        278.7226867675781
+      ],
+      "score": 1.0,
+      "class_id": 1,
+      "class_name": "class_1"
+    }
+  ]
+}

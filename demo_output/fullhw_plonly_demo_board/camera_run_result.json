@@ -1,0 +1,21 @@
+{
+  "bitfile": "hardware/overlay/yolo_pynq_z2_fullhw_plonly_demo_cam32.bit",
+  "frames_processed": 2,
+  "capture_failures": 0,
+  "average_fps": 1.3763023648213915,
+  "elapsed_seconds": 1.4531690499998149,
+  "camera_index": 0,
+  "capture_size": [
+    480,
+    640
+  ],
+  "process_size": [
+    32,
+    32
+  ],
+  "display_window": false,
+  "latest_artifacts": {
+    "preview_path": "/home/xilinx/jupyter_notebooks/yolov8_pynq_z2_project/demo_output/camera_fullhw_plonly_demo_cam32/camera_preview_latest.jpg",
+    "metadata_path": "/home/xilinx/jupyter_notebooks/yolov8_pynq_z2_project/demo_output/camera_fullhw_plonly_demo_cam32/camera_latest_metadata.json"
+  }
+}

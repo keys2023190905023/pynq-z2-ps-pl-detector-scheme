@@ -1,0 +1,21 @@
+{
+  "bitfile": "hardware/overlay/yolo_pynq_z2_fullhw_detector_cam32.bit",
+  "frames_processed": 8,
+  "capture_failures": 0,
+  "average_fps": 4.35259694717241,
+  "elapsed_seconds": 1.8379831850033952,
+  "camera_index": 0,
+  "capture_size": [
+    480,
+    640
+  ],
+  "process_size": [
+    32,
+    32
+  ],
+  "display_window": false,
+  "latest_artifacts": {
+    "preview_path": "demo_output/camera_fullhw_detector_cam32_bench2/camera_preview_latest.jpg",
+    "metadata_path": "demo_output/camera_fullhw_detector_cam32_bench2/camera_latest_metadata.json"
+  }
+}

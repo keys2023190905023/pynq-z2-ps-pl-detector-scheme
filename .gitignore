@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Vivado build and cache
+.Xil/
+build/
+*.jou
+*.log
+*.pb
+*.rpx
+*.backup.jou
+*.backup.log
+usage_statistics_webtalk.*
+webtalk*.jou
+webtalk*.log
+
+# Simulation
+xsim.dir/
+xvlog.log
+xvlog.pb
+xelab.log
+xelab.pb
+xsim.jou
+xsim.log
+
+# Local archives and temp files
+*.zip
+*.7z
+*.tmp
+Thumbs.db
+Desktop.ini
