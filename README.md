@@ -26,6 +26,7 @@
   - `run_fullhw_detector_camera.py`
   - `run_fullhw_detector_live_demo.py`
   - `board_smoketest_fullhw_detector.py`
+  - `publish_to_github.ps1`
 - `demo_output`
   - 已有板测结果、相机结果和吞吐参考
 - `reports`
@@ -99,6 +100,8 @@ python F:\yolo\ps_pl_partitioned_detector_scheme\scripts\run_fullhw_detector_liv
   - 忽略 Vivado 构建缓存、Python 缓存和本地压缩产物
 - `CONTRIBUTING.md`
   - 提交 issue、修改 RTL、补板测结果时的建议流程
+- `scripts/publish_to_github.ps1`
+  - 使用临时 `PAT` 创建 GitHub 仓库并推送，不在仓库内保存凭据
 
 ## 当前边界
 
