@@ -2,7 +2,8 @@ param(
     [string]$UserName = "keys2023190905023",
     [string]$RepoName = "pynq-z2-ps-pl-detector-scheme",
     [string]$Token = $env:GITHUB_TOKEN,
-    [switch]$Private
+    [switch]$Private,
+    [switch]$SkipCreate
 )
 
 $ErrorActionPreference = "Stop"
@@ -24,19 +25,21 @@ $headers = @{
 }
 
 $body = @{
-    name        = $RepoName
-    private     = $visibility
-    has_issues  = $true
+    name         = $RepoName
+    private      = $visibility
+    has_issues   = $true
     has_projects = $false
-    has_wiki    = $false
-    auto_init   = $false
+    has_wiki     = $false
+    auto_init    = $false
 } | ConvertTo-Json
 
-try {
-    Invoke-RestMethod -Method Post -Uri $apiUrl -Headers $headers -Body $body -ContentType "application/json" | Out-Null
-} catch {
-    if ($_.Exception.Response -and $_.Exception.Response.StatusCode.value__ -ne 422) {
-        throw
+if (-not $SkipCreate) {
+    try {
+        Invoke-RestMethod -Method Post -Uri $apiUrl -Headers $headers -Body $body -ContentType "application/json" | Out-Null
+    } catch {
+        if ($_.Exception.Response -and $_.Exception.Response.StatusCode.value__ -ne 422) {
+            throw
+        }
     }
 }
 
