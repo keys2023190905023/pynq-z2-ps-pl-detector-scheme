@@ -48,6 +48,9 @@ git -C $repoRoot remote add origin $remoteUrl
 
 $credentialUrl = "https://$UserName`:$Token@github.com/$UserName/$RepoName.git"
 git -C $repoRoot push $credentialUrl main:main
+if ($LASTEXITCODE -ne 0) {
+    throw "git push failed with exit code $LASTEXITCODE"
+}
 
 Write-Host "PUBLISH_OK"
 Write-Host $remoteUrl
